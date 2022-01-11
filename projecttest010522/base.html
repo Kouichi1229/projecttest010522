@@ -10,7 +10,7 @@
     <style>
     </style>
 </head>
-<body>
+<body >
     
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">1</div>
@@ -99,15 +99,81 @@
 
 
 
+
+
+
+
+
+     
+      <!-- Button trigger modal   這裡開始是彈跳視窗案紐-->
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <img id='sun' src="images/Help.png " alt="help">
+  </button>
   
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">符號說明</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div id='div-top' class="row row-cols-2">
+
+                <div class="col"><img src="images\30度以上.png " alt="30度以上 " id='#over30'></div>
+                <div class="col">
+                    <p id='p1'>溫度超過30°C</p>
+                </div>
+        
+                <div class="col-sm "><img id='middle15-30' src="images\15-30度.png " alt="15-30度 "></div>
+                <div class="col-sm">
+                    <p id='p2'>溫度介於15~30°C</p>
+                </div>
+                <div class="col-sm "><img id='lower15' src="images\15度以下.png " alt="15度以下 "></div>
+                <div class="col-sm">
+                    <p id='p3'>溫度小於15°C</p>
+                </div>
+                <!-- <img id='middle15-30' src="images\15-30度.png " alt="15-30度 ">
+                <p id='p2'>溫度介於15~30°C</p>
+                <img id='lower15' src="images\15度以下.png " alt="15度以下 ">
+                <p id='p3'>溫度小於15°C</p> -->
+            </div>
+            
+        
+            <div id='div-down' class="row row-cols-2">
+
+                <div class="col"><img id='sun' src="images\sun.png " alt="sun "></div>
+                <div class="col">
+                    <p id='p4'>晴朗無雨</p>
+                </div>
+        
+                <div class="col-sm "><img id='rain-1' src="images\10mm.png " alt="rain-10mm "></div>
+                <div class="col-sm">
+                    <p id='p5'>小雨，降雨量小於10mm</p>
+                </div>
+                <div class="col-sm "><img id='rain-2' src="images\10-25mm.png " alt="rain-10-25mm "></div>
+                <div class="col-sm">
+                    <p id='p6'>中雨，降雨量介於10~25mm</p>
+                </div>
+                <div class="col-sm "><img id='rain-3' src="images\25mm.png " alt="rain-25mm "></div>
+                <div class="col-sm">
+                    <p id='p7'>大雨，降雨量大於等於25mm</p>
+                </div>
 
 
-
-  <div class="btn-group" role="group" aria-label="Basic outlined example">
-    <button type="button" class="btn btn-outline-primary">Left</button>
-    <button type="button" class="btn btn-outline-primary">Middle</button>
-    <button type="button" class="btn btn-outline-primary">Right</button>
+                <!-- <img id='sun' src="images\sun.png " alt="sun ">
+                <p id='p4'>晴朗無雨</p>
+                <img id='rain-1' src="images\10mm.png " alt="rain-10mm ">
+                <p id='p5'>小雨，降雨量小於10mm</p>
+                <img id='rain-2' src="images\10-25mm.png " alt="rain-10-25mm ">
+                <p id='p6'>中雨，降雨量介於10~25mm</p>
+                <img id='rain-3' src="images\25mm.png " alt="rain-25mm ">
+                <p id='p7'>大雨，降雨量大於等於25mm</p>  -->
+            </div>
+    </div>
   </div>
+  <!--彈跳視窗按鈕結束-->
 
 
 
@@ -115,38 +181,12 @@
 
 
 
-  <table class="table-secondary">
-    <tr class="table-secondary">
-      <th>預期產能</th>
-      <th>前期產能</th>
-    </tr>
-    <tr>
-      <td>51,374kg</td>
-      <td>40,067kg</td>
-    </tr>
-  </table>
 
 
-  <table class="table">
-    <thead>
-      <tr>
-      
-        <th scope="col">預期產能</th>
-        <th scope="col">前期產能</th>
 
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>51,374kg</td>
-        <td>40,067kg</td>
-      </tr>
-    </tbody>
-  </table>
-<div class="min-vw-100" style="background: blue;">Min-width 100vw</div>
-<div class="min-vh-100" style="background:green;">Min-height 100vh</div>
-<div class="vw-100" style="background:pink;">Width 100vw</div>
-<div class="vh-100" style="background:yellow;">Height 100vh</div>
+
+
+
 
 
   
