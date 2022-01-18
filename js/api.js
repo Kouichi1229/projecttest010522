@@ -11,18 +11,27 @@ function getWeather() {
     xhr.open('get',apiKey, true);
     xhr.send(null);
     xhr.onload = function() {
-        var dataObject = JSON.parse(xhr.responseText);
         showWeather();
     }
 } //end of fun getWeather
 getWeather();
-//選擇城市後，顯示相對應天氣狀況
+
+// 選擇對應的日期
+function compareDate(x){
+    return new Date(x.startTime).getDate() == new Date(x.endTime).getDate();
+}
+
+//顯示相對應天氣狀況
 function showWeather(e) {
-    /*顯示預設值可以在 xhr.onload() 裡面執行 showWeather()，然後在 showWeather()，裡面增加判斷式若沒有 e 則設定 select 的預設值，反之則是設定 e.target.value*/
     var dataObject = JSON.parse(xhr.responseText);
+    
     var location_data = dataObject.records.locations[0].location[12].weatherElement;
     var dataT = location_data[0].time;
+    //var T = dataT.filter(x=>x.elementName ==='T')[0].time;
+
     var datawx = location_data[1].time;
+    //var Wx = datawx.filter(x=>x.elementName ==='Wx')[0].time;
+    
     var t_len = dataT.length;
     var wx_len = datawx.length;
 
@@ -56,7 +65,7 @@ function showWeather(e) {
         }else {
             wIcon.src = 'images/25mm.png';
         }
-        
+
     }//end of for wxList
 
 }// end of fun showWeather

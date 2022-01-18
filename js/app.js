@@ -1,5 +1,9 @@
 var day;
 var Today=new Date();
+var year = Today.getFullYear();
+var month = Today.getMonth();
+var date = Today.getDate();
+
 
 switch (new Date().getDay()) {
   case 0:
@@ -24,7 +28,9 @@ switch (new Date().getDay()) {
   day = "星期六";
 }
 document.getElementById("weekend").innerHTML = day;
-document.getElementById('mounth').innerHTML = Today.getMonth()+1 + "月" ;
-document.getElementById('date').innerHTML = Today.getDate();
-document.getElementById('year').innerHTML ='栽種年份：'+ Today.getFullYear();
-document.getElementById('update').innerHTML ='更新日期：'+ Today.getFullYear()+'/'+ Today.getMonth()+1 +'/'+ Today.getDate();
+document.getElementById('mounth').innerHTML = month+1 + "月" ;
+document.getElementById('date').innerHTML = date;
+document.getElementById('year').innerHTML ='栽種年份：'+ year;
+document.getElementById('update').innerHTML ='更新日期：'+ year+'/'+ month+1 +'/'+ date;
+//document.getElementById("lunar").innerHTML = moment().year(1995).month(2).date(9).lunar().format('YYYY-MM-DD');
+

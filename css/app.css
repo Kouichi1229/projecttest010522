@@ -61,8 +61,8 @@ div.table {
     background-color: transparent;
 }
 div.textmode {
-    -webkit-writing-mode: vertical-lr;
     writing-mode: vertical-lr; 
+    text-orientation: upright;
 }
 div.datatextAlign {
     text-align: right;
